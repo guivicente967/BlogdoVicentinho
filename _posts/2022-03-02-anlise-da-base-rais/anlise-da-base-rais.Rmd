@@ -15,3 +15,27 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 Este é meu primeiro [projeto]{.ul}
+
+Formatar um texto em código `usethis::create_post`
+
+## Código em R no Rmarkdown
+
+```{r echo=TRUE}
+# aqui a gente coloca o código em r
+
+1+1
+```
+
+criamos acima um campo de código
+
+```{r echo=TRUE}
+library(tidyverse)
+```
+
+Tabela:
+
+```{r echo=TRUE}
+knitr::kable(mtcars)
+```
+
+hoje é o dia `r Sys.Date()`.
