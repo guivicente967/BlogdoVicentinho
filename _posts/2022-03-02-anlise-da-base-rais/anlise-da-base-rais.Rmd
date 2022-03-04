@@ -1,5 +1,5 @@
 ---
-title: "Analise da base RAIS"
+title: "Análise da base RAIS"
 description: |
   Analise de salários na base RAIS. Esse projeto foi feito na semana Data Science na Prática da Curso-R
 author:
@@ -10,13 +10,8 @@ output:
     self_contained: false
 ---
 
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web.
-
-Learn more about using Distill at <https://rstudio.github.io/distill>.
-
-
+Este é meu primeiro [projeto]{.ul}

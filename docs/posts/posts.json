@@ -18,7 +18,7 @@
   },
   {
     "path": "posts/2022-03-02-anlise-da-base-rais/",
-    "title": "Analise da base RAIS",
+    "title": "Análise da base RAIS",
     "description": "Analise de salários na base RAIS. Esse projeto foi feito na semana Data Science na Prática da Curso-R",
     "author": [
       {
@@ -28,9 +28,9 @@
     ],
     "date": "2022-03-02",
     "categories": [],
-    "contents": "\r\nDistill is a publication format for scientific and technical writing, native to the web.\r\nLearn more about using Distill at https://rstudio.github.io/distill.\r\n\r\n\r\n\r\n",
+    "contents": "\r\nEste é meu primeiro projeto\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2022-03-02T09:56:10-03:00",
+    "last_modified": "2022-03-04T08:42:20-03:00",
     "input_file": "anlise-da-base-rais.knit.md"
   }
 ]
