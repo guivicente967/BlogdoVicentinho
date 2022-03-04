@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2022-03-04-analise-real-da-base-rais/",
+    "title": "Analise real da base RAIS",
+    "description": "Este post se trata da análise real da base RAIS",
+    "author": [
+      {
+        "name": "Gui Vicente",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2022-03-04",
+    "categories": [],
+    "contents": "\r\nteste\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2022-03-04T08:57:25-03:00",
+    "input_file": "analise-real-da-base-rais.knit.md"
+  },
+  {
     "path": "posts/welcome/",
     "title": "Welcome to Blog do Vicentinho",
     "description": "Welcome to our new blog, Blog do Vicentinho. We hope you enjoy \nreading what we have to say!",

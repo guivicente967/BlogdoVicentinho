@@ -1,9 +1,9 @@
 ---
 title: "Analise real da base RAIS"
 description: |
-  A short description of the post.
+  Este post se trata da análise real da base RAIS
 author:
-  - name: Nora Jones
+  - name: Gui Vicente
     url: https://example.com/norajones
 date: 2022-03-04
 output:
@@ -16,8 +16,6 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web.
-
-Learn more about using Distill at <https://rstudio.github.io/distill>.
+teste
 
 
