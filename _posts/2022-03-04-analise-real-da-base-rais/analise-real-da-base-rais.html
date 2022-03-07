@@ -112,12 +112,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Analise real da base RAIS"]},{"type":"character","attributes":{},"value":["Este post se trata da análise real da base RAIS\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Gui Vicente"]},{"type":"character","attributes":{},"value":["https://example.com/norajones"]}]}]},{"type":"character","attributes":{},"value":["2022-03-04"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","output","date"]}},"value":[{"type":"character","attributes":{},"value":["Analise real da base RAIS"]},{"type":"character","attributes":{},"value":["Este post se trata da análise real da base RAIS\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","date"]}},"value":[{"type":"character","attributes":{},"value":["Gui Vicente"]},{"type":"character","attributes":{},"value":["2022-03-04"]}]}]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["03-04-2022"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["analise-real-da-base-rais_files/anchor-4.2.2/anchor.min.js","analise-real-da-base-rais_files/bowser-1.9.3/bowser.min.js","analise-real-da-base-rais_files/distill-2.2.21/template.v2.js","analise-real-da-base-rais_files/header-attrs-2.11/header-attrs.js","analise-real-da-base-rais_files/jquery-3.6.0/jquery-3.6.0.js","analise-real-da-base-rais_files/jquery-3.6.0/jquery-3.6.0.min.js","analise-real-da-base-rais_files/jquery-3.6.0/jquery-3.6.0.min.map","analise-real-da-base-rais_files/popper-2.6.0/popper.min.js","analise-real-da-base-rais_files/tippy-6.2.7/tippy-bundle.umd.min.js","analise-real-da-base-rais_files/tippy-6.2.7/tippy-light-border.css","analise-real-da-base-rais_files/tippy-6.2.7/tippy.css","analise-real-da-base-rais_files/tippy-6.2.7/tippy.umd.min.js","analise-real-da-base-rais_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1459,7 +1459,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Analise real da base RAIS","description":"Este post se trata da análise real da base RAIS","authors":[{"author":"Gui Vicente","authorURL":"https://example.com/norajones","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2022-03-04T00:00:00.000-03:00","citationText":"Vicente, 2022"}
+{"title":"Analise real da base RAIS","description":"Este post se trata da análise real da base RAIS","authors":[{"author":"Gui Vicente","authorURL":"#","affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2022-03-04T00:00:00.000-03:00","citationText":"Vicente, 2022"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -1476,14 +1476,52 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </div>
 
 <div class="d-byline">
-  Gui Vicente <a href="https://example.com/norajones" class="uri">https://example.com/norajones</a> 
+  Gui Vicente  
   
-<br/>2022-03-04
+<br/>03-04-2022
 </div>
 
 <div class="d-article">
-<p>teste</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<p>Nesse relatorio estamos interessados em responder a pergunta:</p>
+<p>“Quanto ganha um cientista de dados?”</p>
+<p>Para isso iremos utilizar a base da RAIS.</p>
+<h1 id="acessando-os-dados-da-rais">acessando os dados da rais</h1>
+<p>vamos utilizar o datalake da iniciativa Base dos Dados. Abaixo se encontra o código que carrega as primeiras 5 linhas da tabela de microdados.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="sourceCode">
+<pre class="sourceCode r"><code class="sourceCode r"><span class='va'>tabela_normal</span> <span class='op'>&lt;-</span>
+  <span class='fu'><a href='https://rdrr.io/r/utils/read.table.html'>read.csv</a></span><span class='op'>(</span><span class='st'>"https://raw.githubusercontent.com/curso-r/main-r4ds-1/master/dados/imdb.csv"</span><span class='op'>)</span>
+
+
+<span class='fu'><a href='https://rdrr.io/r/utils/head.html'>head</a></span><span class='op'>(</span><span class='va'>tabela_normal</span>, <span class='fl'>5</span><span class='op'>)</span>
+</code></pre>
+</div>
+<pre><code>                                      titulo  ano           diretor
+1                                   AvatarÂ  2009     James Cameron
+2 Pirates of the Caribbean: At World&#39;s EndÂ  2007    Gore Verbinski
+3                    The Dark Knight RisesÂ  2012 Christopher Nolan
+4                              John CarterÂ  2012    Andrew Stanton
+5                             Spider-Man 3Â  2007         Sam Raimi
+  duracao   cor                         generos pais
+1     178 Color Action|Adventure|Fantasy|Sci-Fi  USA
+2     169 Color        Action|Adventure|Fantasy  USA
+3     164 Color                 Action|Thriller  USA
+4     132 Color         Action|Adventure|Sci-Fi  USA
+5     156 Color        Action|Adventure|Romance  USA
+        classificacao orcamento   receita nota_imdb likes_facebook
+1 A partir de 13 anos 237000000 760505847       7.9          33000
+2 A partir de 13 anos 300000000 309404152       7.1              0
+3 A partir de 13 anos 250000000 448130642       8.5         164000
+4 A partir de 13 anos 263700000  73058679       6.6          24000
+5 A partir de 13 anos 258000000 336530303       6.2              0
+        ator_1           ator_2               ator_3
+1  CCH Pounder Joel David Moore            Wes Studi
+2  Johnny Depp    Orlando Bloom       Jack Davenport
+3    Tom Hardy   Christian Bale Joseph Gordon-Levitt
+4 Daryl Sabara  Samantha Morton         Polly Walker
+5 J.K. Simmons     James Franco        Kirsten Dunst</code></pre>
+</div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
 </div>

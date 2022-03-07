@@ -4,18 +4,31 @@ description: |
   Este post se trata da análise real da base RAIS
 author:
   - name: Gui Vicente
-    url: https://example.com/norajones
-date: 2022-03-04
+    date: 2022-03-04
 output:
   distill::distill_article:
     self_contained: false
 ---
 
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-teste
+Nesse relatorio estamos interessados em responder a pergunta:
+
+"Quanto ganha um cientista de dados?"
+
+Para isso iremos utilizar a base da RAIS.
+
+# acessando os dados da rais
+
+vamos utilizar o datalake da iniciativa Base dos Dados. Abaixo se encontra o código que carrega as primeiras 5 linhas da tabela de microdados.
+
+```{r echo=TRUE}
+
+tabela_normal <-
+  read.csv("https://raw.githubusercontent.com/curso-r/main-r4ds-1/master/dados/imdb.csv")
 
 
+head(tabela_normal, 5)
+```

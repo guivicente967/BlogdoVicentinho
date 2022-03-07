@@ -1,7 +1,7 @@
 ---
-title: "Análise da base RAIS"
+title: "Marcações Rmarkdown"
 description: |
-  Analise de salários na base RAIS. Esse projeto foi feito na semana Data Science na Prática da Curso-R
+  Aula sobre as marcações do Rmarkdown da semana Data Science da Curso-R
 author:
   - name: Gui Vicente
 date: 2022-03-02
@@ -14,28 +14,90 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Este é meu primeiro [projeto]{.ul}
+Ao utilizar a função para criar um post
 
-Formatar um texto em código `usethis::create_post`
+`distill::create_post("Título do Meu Primeiro Post")`
 
-## Código em R no Rmarkdown
+não utilizar pontos de acentuação, isso gera problemas de encoding.
 
+O botão knit, acima na barra de funções, tem a função de "subir" as alterações para a página. É super importante criar o hábito de clicar nesse botão a cada alteração realizada, a fim de não perder nenhuma nova informação inserida.
+
+Formatar um texto como código: inserir o texto entre a crase (\`\`)
+
+## Como colocar um link? [Link para o YouTube](https://www.youtube.com/)
+
+-   entre os colchetes inserir o texto do hiperlink
+-   entre parenteses inserir o link desejado
+
+Listas
+
+-   Gui
+-   Ro
+-   Bolo
+-   Kiwi
+-   Tapioca
+
+ou
+
+1.  Gui
+2.  Ro
+3.  Bolo
+4.  Kiwi
+5.  Tapioca
+
+Títulos e Subtítulos
+
+## Listas
+
+### Lista numerada
+
+1.  Gui
+2.  Ro
+3.  Bolo
+4.  Kiwi
+5.  Tapioca
+
+### Lista Bulletpoint
+
+-   Gui
+-   Ro
+-   Bolo
+-   Kiwi
+-   Tapioca
+
+## Imagens
+
+![xadrez no R](https://curso-r.com/images/blog/chess.jpg)
+
+## Códigos em R
+
+- inserir Chunks de código
 ```{r echo=TRUE}
-# aqui a gente coloca o código em r
-
+## aqui a gente coloca o código em R
 1+1
 ```
+Criamos acima um campo de código
 
-criamos acima um campo de código
+## Inerindo tabelas
 
-```{r echo=TRUE}
-library(tidyverse)
-```
-
-Tabela:
-
-```{r echo=TRUE}
+```{r}
 knitr::kable(mtcars)
 ```
 
-hoje é o dia `r Sys.Date()`.
+
+## Inserindo Plots
+
+```{r}
+plot(mtcars$mpg, mtcars$hp)
+```
+
+
+
+
+
+
+
+
+
+
+
